@@ -18,9 +18,17 @@ int main(void)
     printf("Введите время в минутах и секундах");
     printf("Начните с минут:");
     scanf("%d", &min);
-    printf("Введите секунды:", &sec);
-    time = S_PER_M*min + sec
-    distm = M_PER_M*distk;
+    printf("Введите секунды:");
+    scanf("%d", &sec);
+    time = S_PER_M * min + sec;
+    distm = M_PER_K * distk;
+    rate = distm/time * S_PER_H;
+    mtime = (double) time / distm;
+    mmin = (int) mtime / S_PER_M;
+    msec = (int) mtime % S_PER_M;
+    printf("Вы пробежали %1.2f км (%1.2f мили) за %d мин %d сек.\n", distk, distm, min, sec);
+    printf("Такая скрость соответствуюе %d мили за мин.", mmin);
+    printf("%d сек.\nВаша средняя скорость равняется %1.2f мили в час", msec, rate);
     return 0;
 }
 
