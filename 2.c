@@ -20,3 +20,4 @@ void proud(int n)
         printf("_o_");
     printf("\n");
 }
+
