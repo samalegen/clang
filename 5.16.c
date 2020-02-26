@@ -11,6 +11,7 @@ int main(void)
     int time;
     double mtime;
     int mmin, msec;
+    
     printf("Эта программа пересчитывает дистанцию в метрической системе");
     printf("Скооость в милях в час");
     printf("Ввелите дистанцию в километрах:");
@@ -20,6 +21,7 @@ int main(void)
     scanf("%d", &min);
     printf("Введите секунды:");
     scanf("%d", &sec);
+    
     time = S_PER_M * min + sec;
     distm = M_PER_K * distk;
     rate = distm/time * S_PER_H;
