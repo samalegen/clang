@@ -1,7 +1,7 @@
 #include <stdio.h>
-#define S_PER_M 60;
-#define S_PER_H 3600;
-#define M_PER_K 0.62137;
+#define int S_PER_M 60
+#define int S_PER_H = 3600
+#define double M_PER_K 0.62137;
 
 int main(void)
 {
@@ -12,14 +12,14 @@ int main(void)
     double mtime;
     int mmin, msec;
     
-    printf("Эта программа пересчитывает дистанцию в метрической системе");
-    printf("Скооость в милях в час");
-    printf("Ввелите дистанцию в километрах:");
+    printf("Эта программа пересчитывает дистанцию в метрической системе\n");
+    printf("Скорость в милях в час\n");
+    printf("Ввелите дистанцию в километрах:\n");
     scanf("%lf", &distk);
-    printf("Введите время в минутах и секундах");
-    printf("Начните с минут:");
+    printf("Введите время в минутах и секундах\n");
+    printf("Начните с минут:\n");
     scanf("%d", &min);
-    printf("Введите секунды:");
+    printf("Введите секунды:\n");
     scanf("%d", &sec);
     
     time = S_PER_M * min + sec;
