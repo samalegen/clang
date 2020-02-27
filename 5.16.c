@@ -1,7 +1,7 @@
 #include <stdio.h>
-#define int S_PER_M = 60
-#define int S_PER_H = 3600
-#define double M_PER_K = 0.62137
+#define S_PER_M 60
+#define S_PER_H 3600
+#define M_PER_K 0.62137
 
 int main(void)
 {
