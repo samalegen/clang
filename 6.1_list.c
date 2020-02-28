@@ -6,7 +6,7 @@ int main(void)
     long sum = 0L;
     int status;
     printf("Введите число (или q для подсчета и завершегия) ");
-    status = scanf("%ld", &num);
+    status = scanf("%ld", &sum);
     while(status == 1)
     {
         sum = sum + num;
