@@ -1,0 +1,8 @@
+#!/bin/bash
+
+pwd
+whoami
+cd 
+cd Downloads
+pwd
+ls -al
