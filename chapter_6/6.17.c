@@ -4,11 +4,13 @@ int main(void)
     const int MIN = 60;
     int min, hour, min1;
     printf("enter min\n");
-
-    while((scanf("%d", &min))==1)
+   // scanf("%d", &min);
+    while(min>0)
     {
+        scanf("%d", &min);
         hour=min/MIN;
         min1=min%MIN;
+        
 
         printf("%d hour %d minuts\n", hour, min1);
     }
